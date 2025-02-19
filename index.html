@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +13,7 @@
   </head>
   <body>
     <div class="main-container">
+      <!-- Header Section -->
       <header>
         <div class="header-left">
           <h1>Greeshma Kantamreddy</h1>
@@ -26,35 +26,29 @@
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="experience.html" class="nav-link">Experience</a></li>
             <li><a href="projects.html" class="nav-link">Projects</a></li>
-            <li>
-              <a
-                href="https://drive.google.com/file/d/1je_PU_aLbu5cs_3YC4eINCbRVCXmjgTi/view?usp=sharing"
-                target="_blank"
-                class="nav-link"
-                >Resume</a
-              >
-            </li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </nav>
         <div class="overlay" onclick="toggleMenu()"></div>
       </header>
+
+      <!-- Main Content Section -->
       <main>
         <section id="intro" class="intro">
-          <h3>Hey, There!</h3>
-          <h1><span class="underline">I a</span>m Pranideep Reddy Nayaki</h1>
-          <h3>Software Engineer</h3>
+          <h3>Hello, I'm</h3>
+          <h1><span class="underline">Greeshma Kantamreddy</span></h1>
+          <h3>Software Engineer | Data Enthusiast</h3>
           <p>
-            Fueled by a passion for technology and innovation, I excel at
-            developing elegant solutions for complex challenges. With a strong
-            background in software development and a keen eye for detail, I
-            consistently deliver projects that surpass expectations.
+            Passionate about technology, software development, and data science, 
+            I have a solid background in computer science, with expertise in Salesforce, 
+            Java, Python, and Machine Learning. I thrive on solving complex problems 
+            and delivering high-quality solutions.
           </p>
-          <a href="about.html" class="know-more-btn">Know more</a>
+          <a href="about.html" class="know-more-btn">Know More</a>
           <div class="boxes">
             <div class="box">
               <img src="images/experience-icon.png" alt="Experience Icon" />
-              <p><b>3 Years of Experience</b></p>
+              <p><b>2+ Years of Experience</b></p>
             </div>
             <div class="box">
               <img src="images/projects-icon.png" alt="Projects Icon" />
@@ -62,12 +56,34 @@
             </div>
             <div class="box">
               <img src="images/coding-icon.png" alt="Coding Icon" />
-              <p><b>500+ Coding Problems Solved</b></p>
+              <p><b>300+ Coding Problems Solved</b></p>
             </div>
           </div>
         </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+          <h2>Technical Skills</h2>
+          <ul>
+            <li><b>Languages:</b> C/C++, Python, Java, JavaScript, SQL, Apex</li>
+            <li><b>Salesforce Platforms:</b> Sales Cloud, Service Cloud, Marketing Cloud, Einstein Analytics</li>
+            <li><b>Frameworks:</b> ReactJS, Flask, Spring Boot, RESTful APIs</li>
+            <li><b>Development Tools:</b> Git, GitHub, AWS, Azure, Visual Studio, IntelliJ, Eclipse</li>
+            <li><b>Other Skills:</b> Data Structures, Algorithms, JIRA, Tableau, Agile Methodologies</li>
+          </ul>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+          <h2>Let's Connect</h2>
+          <p>If you'd like to collaborate or just want to chat about tech, feel free to reach out!</p>
+          <p>Email: <a href="mailto:greeshma.kantamreddy@gmail.com">greeshma.kantamreddy@gmail.com</a></p>
+          <p>Phone: <a href="tel:+13305544495">+1 (330) 554 4495</a></p>
+          <p>Location: Kent, OH 44240</p>
+        </section>
       </main>
     </div>
+    
     <script>
       function toggleMenu() {
         var nav = document.querySelector("nav");
@@ -76,5 +92,3 @@
     </script>
   </body>
 </html>
-
-
