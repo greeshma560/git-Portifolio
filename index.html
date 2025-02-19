@@ -1,59 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Greeshma Kantamreddy's Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranideep Reddy Nayaki - Portfolio</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="header-left">
+          <h1>Pranideep Reddy</h1>
+        </div>
+        <button class="toggle-menu" onclick="toggleMenu()">&#9776;</button>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <button class="close-menu" onclick="toggleMenu()">&times;</button>
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1je_PU_aLbu5cs_3YC4eINCbRVCXmjgTi/view?usp=sharing"
+                target="_blank"
+                class="nav-link"
+                >Resume</a
+              >
+            </li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
         </nav>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h1>Greeshma Kantamreddy</h1>
-        <p>Full Stack Developer | Data Analyst | Software Engineer</p>
-        <img src="images/profile.jpg" alt="Greeshma's Profile" />
-        <p>Welcome to my portfolio! I am passionate about software development, data analysis, and solving complex problems.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Smart Fire Alarm Using Arduino</h3>
-            <p>Description of the project</p>
-            <a href="link_to_project">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Sleep Disorders and Factors Affecting Sleep Quality</h3>
-            <p>Description of the project</p>
-            <a href="link_to_project">View Project</a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you want to connect with me, feel free to email me at: <a href="mailto:greeshma.kantamreddy@gmail.com">greeshma.kantamreddy@gmail.com</a></p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Greeshma Kantamreddy</p>
-    </footer>
-
-    <script src="scripts/main.js"></script>
-</body>
+        <div class="overlay" onclick="toggleMenu()"></div>
+      </header>
+      <main>
+        <section id="intro" class="intro">
+          <h3>Hey, There!</h3>
+          <h1><span class="underline">I a</span>m Pranideep Reddy Nayaki</h1>
+          <h3>Software Engineer</h3>
+          <p>
+            Fueled by a passion for technology and innovation, I excel at
+            developing elegant solutions for complex challenges. With a strong
+            background in software development and a keen eye for detail, I
+            consistently deliver projects that surpass expectations.
+          </p>
+          <a href="about.html" class="know-more-btn">Know more</a>
+          <div class="boxes">
+            <div class="box">
+              <img src="images/experience-icon.png" alt="Experience Icon" />
+              <p><b>3 Years of Experience</b></p>
+            </div>
+            <div class="box">
+              <img src="images/projects-icon.png" alt="Projects Icon" />
+              <p><b>10+ Projects Completed</b></p>
+            </div>
+            <div class="box">
+              <img src="images/coding-icon.png" alt="Coding Icon" />
+              <p><b>500+ Coding Problems Solved</b></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      function toggleMenu() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
+
 
