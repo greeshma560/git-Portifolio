@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Greeshma Kantamreddy</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/mobile-header.css" />
+    <link rel="stylesheet" href="css/mobile-about.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="header-left">
+          <h1>Greeshma Kantamreddy</h1>
+        </div>
+        <button class="toggle-menu" onclick="toggleMenu()">&#9776;</button>
+        <nav>
+          <button class="close-menu" onclick="toggleMenu()">&times;</button>
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="overlay" onclick="toggleMenu()"></div>
+      </header>
+
+      <main>
+        <section class="about">
+          <div class="profile-container">
+            <div class="profile-image-wrapper">
+              <img src="images/profile-pic.jpg" alt="Greeshma's Picture" class="profile-image" />
+            </div>
+            <div class="profile-content">
+              <h1>About Me</h1>
+              <div class="content-box">
+                <ul>
+                  <li>
+                    I am a passionate Software Engineer with a Master’s degree in Computer Science. 
+                    Currently, I am developing cloud-based applications using Salesforce and working 
+                    on various web development projects.
+                  </li>
+                  <li>
+                    I have worked on numerous projects involving Java, Python, and Salesforce, with a focus 
+                    on automating business workflows and improving system efficiency.
+                  </li>
+                  <li>
+                    I am always eager to learn new technologies, and my problem-solving skills make me a 
+                    valuable asset in collaborative environments.
+                  </li>
+                  <li>
+                    Outside of work, I enjoy exploring new coding challenges, contributing to open-source 
+                    projects, and staying up-to-date with the latest tech trends.
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
+                <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+              </div>
+              <div class="content-box">
+                <div id="Skills" class="tabcontent">
+                  <h3>Skills</h3>
+                  <p><strong>Programming Languages:</strong> C/C++, Python, Java, JavaScript, SQL, Apex</p>
+                  <p><strong>Frameworks:</strong> ReactJS, Flask, Spring Boot, RESTful APIs</p>
+                  <p><strong>Salesforce Platforms:</strong> Sales Cloud, Service Cloud, Marketing Cloud</p>
+                  <p><strong>Developer Tools:</strong> AWS, Git, GitHub, Visual Studio, IntelliJ, Docker</p>
+                  <p><strong>Soft Skills:</strong> Communication, Team Collaboration, Problem Solving</p>
+                </div>
+                <div id="Education" class="tabcontent">
+                  <h3>Education</h3>
+                  <p><strong>Kent State University</strong><br>Master’s in Computer Science – Expected Dec 2024</p>
+                  <p><strong>Raghu Institute of Technology</strong><br>Bachelor’s in Computer Science and Engineering – 8.09/10.0, Graduated: Jul 2021</p>
+                </div>
+              </div>
+              <a href="assets/Greeshma_Resume.pdf" class="resume-btn" download>Download Resume</a>
+              <h2>Connect with Me</h2>
+              <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/greeshmakantamreddy" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon" /></a></li>
+                <li><a href="https://github.com/greeshma-kantamreddy" target="_blank"><img src="images/github-icon.png" alt="GitHub" class="social-icon" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
